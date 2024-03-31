@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 
 function Homepage() {
   return (
-    <div>Homepage</div>
-  )
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
 }
 
-export default Homepage
+export default Homepage;
