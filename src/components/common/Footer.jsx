@@ -1,11 +1,11 @@
 import React from "react";
-
+import svg from "../../assets/image.svg";
 function Footer() {
   return (
-    <div className="bg-[#2c3e9e] text-white  bottom-0">
-      <footer className="bg-[#2c3e9e] text-white py-8 relative">
+    <section className="text-white  bottom-0 relative" id="footer">
+      <footer className="bg text-white py-8 relative pt-[160px] md:pt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
               <h5 className="text-xl font-semibold mb-6">Contact Us</h5>
               <ul className="space-y-4">
@@ -137,10 +137,12 @@ function Footer() {
             <path d="M12 19V5"></path>
           </svg>
         </a>
-        <p className="text-sm text-center">Made with ❤ by @BinaryBrigades</p>
+        <p className="text-sm text-center text-gray-500">
+          Made with ❤ by @BinaryBrigades
+        </p>
         <a href="https://github.com/Binary-Brigades"></a>{" "}
       </footer>
-    </div>
+    </section>
   );
 }
 
