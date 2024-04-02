@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../common/Header";
+import Footer from "../common/Footer";
 
 function Admission() {
-  return (<div className = "flex flex-col">
+  return (
+    
+  <div className = "flex flex-col">
+    <Header/>
 
   <div className="paragraph">At Mundika High School, we strive to make the admissions process as smooth and transparent as possible. We welcome prospective students and their families to explore the opportunities available at our institution. Below you will find information regarding admission requirements, application procedures, and important dates.
     Admission Requirements</div>
@@ -75,6 +80,7 @@ function Admission() {
       <h3 className = "text-xl font-bold">Interviews</h3>
       <p>Attend an interview with school officials to discuss goals and aspirations.</p>
     </div> */}
+    <Footer/>
 
   </div>
 

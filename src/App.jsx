@@ -19,7 +19,6 @@ function App() {
         <Route path="/administration" element={<AdministrationPage />} />
         <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/newsandevents" element={<NewsAndEventsPage />} />
-        <Route path = "/library" element = {<ELibraryPage/>}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
