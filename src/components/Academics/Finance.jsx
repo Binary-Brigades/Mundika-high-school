@@ -1,7 +1,17 @@
 import React from "react";
+import Header from "../common/Header";
+
+import Footer from "../common/Footer";
+import FInanceDetails from "./Finance/FInanceDetails";
 
 function Finance() {
-  return <div>Finance</div>;
+  return(
+    <>
+    <Header />
+    <FInanceDetails/>
+    <Footer/>
+    </>
+  );
 }
 
 export default Finance;
