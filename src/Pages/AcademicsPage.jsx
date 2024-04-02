@@ -1,18 +1,24 @@
 import React from "react";
+import { useLocation } from "react-router";
+import Finance from "../components/Academics/Finance";
+import Performance from "../components/Academics/Performance";
 import Admission from "../components/Academics/Admission";
-import Footer from "../components/common/Footer";
-import Header from "../components/common/Header";
-
-
+import ELibrary from "../components/Academics/ELibrary";
 
 function Academics() {
-  return <div>
-    <Header/>
-    <div className="px-4">
-    <Admission/>
+  const { state } = useLocation();
+  return (
+    <div>
+      {
+        <div>
+          {state === "Finance" && <Finance />}
+          {state === "Performance" && <Performance />}
+          {state === "Admission" && <Admission />}
+          {state === "E-library" && <ELibrary />}
+        </div>
+      }
     </div>
-    <Footer/>
-  </div>;
+  );
 }
 
 export default Academics;
