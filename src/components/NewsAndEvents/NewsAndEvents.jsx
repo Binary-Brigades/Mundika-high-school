@@ -1,7 +1,10 @@
 import React from "react";
-
 function NewsAndEvents() {
-  return <div>NewsAndEvents</div>;
+  return <>
+  <div>
+  
+  </div>
+  </>;
 }
 
 export default NewsAndEvents;

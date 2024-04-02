@@ -86,7 +86,7 @@ function FeaturedAlumnis() {
   };
   return (
     <div className="">
-      <h1 className="border-red-500 border-l-8 text-xl mt-12 sm:text-3xl font-semibold ">
+      <h1 className="border-red-500 border-l-8 px-2 text-xl mt-12 sm:text-3xl font-semibold ">
         Featured Alumni
       </h1>
       <div>
