@@ -16,6 +16,7 @@ const HeroItems = [
   },
 ];
 
+
 function Hero() {
   var settings = {
     dots: false,
