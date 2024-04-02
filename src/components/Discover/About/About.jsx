@@ -19,7 +19,7 @@ function About() {
       <Description />
       <AboutVisionMission />
       <Achievement />
-      <Partnership />
+      {/* <Partnership /> */}
       <div id="footer">
         <Footer />
       </div>

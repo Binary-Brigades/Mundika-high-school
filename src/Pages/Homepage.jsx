@@ -20,7 +20,7 @@ function Homepage() {
       <About />
       <PricipalMessage />
       <Testimonials />
-      <Partnership />
+      {/* <Partnership /> */}
       <Footer />
     </div>
   );

@@ -84,7 +84,7 @@ const Header = ({ setShowSidebar }) => {
               <ul className="flex items-center gap-6">
                 <li className="py-4">
                   <HashLink smooth to="/">
-                   Home
+                    Home
                   </HashLink>
                 </li>
                 <li className="relative py-4 group cursor-pointer">
@@ -221,14 +221,14 @@ const Header = ({ setShowSidebar }) => {
               <div className="flex justify-end py-[2px] gap-8">
                 <div className="flex items-center justify-center gap-3 ">
                   <FaPhoneAlt color="#590000" />
-                  <a href="tel:+254740920640">
-                    <p>+254740920640</p>
+                  <a href="tel:+254113198044">
+                    <p>+254113198044</p>
                   </a>
                 </div>
                 <div className="flex items-center justify-center gap-3 ">
                   <HiMail color="#590000" />
-                  <a href="mailto:email@example.com">
-                    <p>email@example.com</p>
+                  <a href="mailto:mundika@gmail.com">
+                    <p>mundika@gmail.com</p>
                   </a>
                 </div>
               </div>
