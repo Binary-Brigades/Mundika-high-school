@@ -71,13 +71,13 @@ const Alumnis = [
 function AlumniDirectory() {
   return (
     <div>
-      <h1 className="border-red-500 px-2 border-l-8 mt-12 text-3xl font-semibold">
+      <h1 className="border-[#590000] px-2 border-l-8 mt-12 text-3xl font-semibold">
         Alumni
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 my-4">
         {
           Alumnis.map((alumnus)=>(
-            <div key={alumnus.id} className="flex flex-col items-start space-y-1 justify-center bg-white shadow-md rounded-md p-4">
+            <div key={alumnus.id} className="flex flex-col items-start space-y-1 pb-4 justify-center bg-white shadow-md rounded-md px-4">
               <img src={alumnus.image} alt="" className="self-center h-40 w-full object-cover bg-red-500" />
               <h1 className="text-xl text-nowrap font-semibold">{alumnus.name}</h1>
               <h1 className="text-md text-start w-full text-gray-500">{alumnus.year}</h1>

@@ -1,10 +1,7 @@
-import React from "react";
-import { useLocation } from "react-router";
-import Finance from "../components/Academics/Finance";
-import Performance from "../components/Academics/Performance";
+import { useLocation } from "react-router-dom";
 import Admission from "../components/Academics/Admission";
 import ELibrary from "../components/Academics/ELibrary";
-
+import Finance from "../components/Academics/Finance";
 function Academics() {
   const { state } = useLocation();
   return (

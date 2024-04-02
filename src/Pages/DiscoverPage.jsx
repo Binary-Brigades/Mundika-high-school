@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../components/Discover/About/About";
-import Gallery from "../components/Discover/Gallery";
+import Gallery from "../components/Discover/Gallery/Gallery";
 import { useLocation } from "react-router";
 function Discover() {
   const { state } = useLocation();

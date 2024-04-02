@@ -51,15 +51,16 @@ const dropdownDiscover = [
   },
 ];
 
-const Header = () => {
+const Header = ({ setShowSidebar }) => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+    setShowSidebar((prevState) => !prevState);
   };
 
   return (
     <>
-      <div className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-md z-[9999] justify-between items-center px-6 flex h-[80px]">
+      <div className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px]">
         <div className="container py-3 sm:py-0 relative">
           <div className="flex justify-between items-center">
             {/* logo */}
@@ -193,16 +194,16 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <Link to="/#footer" onClick={() => window.scrollTo(80, 800)}>
+                  <a href="#" onClick={() => window.scrollTo(-1, 0)}>
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
 
             <div className="flex items-center gap-4">
               <div className="md:hidden block">
-                {showMenu ? (
+                {!showMenu ? (
                   <HiMenuAlt1
                     onClick={toggleMenu}
                     className="cursor-pointer transition-all"
