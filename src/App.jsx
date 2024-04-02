@@ -15,10 +15,11 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/alumni" element={<AlumniPage />} />
         <Route path="/discover" element={<Discover />} />
-        <Route path="/academis" element={<Academics />} />
+        <Route path="/academics" element={<Academics />} />
         <Route path="/administration" element={<AdministrationPage />} />
         <Route path="/activities" element={<ActivitiesPage />} />
         <Route path="/newsandevents" element={<NewsAndEventsPage />} />
+        <Route path = "/library" element = {<ELibraryPage/>}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
