@@ -3,7 +3,7 @@ import React from "react";
 function Partnership() {
   return (
     <div className="bg-white flex-col w-screen py-5 px-4 md:px-12 lg:px-20 justify-center items-center">
-      <p className="font-semibold text-lg w-full text-center">
+      <p className="font-semibold text-lg w-full text-center text-[#590000]/80">
         In Partnership With
       </p>
       <div className="w-full flex justify-center my-4 md:my-6 items-center flex-row gap-4 md:gap-12">

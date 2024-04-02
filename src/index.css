@@ -11,3 +11,20 @@ body {
   background-position: top;
   background-size: cover;
 }
+.aboutbg{
+ background-image: url("./assets/Rectangle 30.png"); 
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbary-button {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 10px;
+  background: rgb(59 130 246);
+}
+::-webkit-scrollbar-track {
+  background: #aaa;
+}

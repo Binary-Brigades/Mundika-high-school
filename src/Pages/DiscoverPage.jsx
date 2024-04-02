@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../components/Discover/About";
+import About from "../components/Discover/About/About";
 import Gallery from "../components/Discover/Gallery";
 import { useLocation } from "react-router";
 function Discover() {

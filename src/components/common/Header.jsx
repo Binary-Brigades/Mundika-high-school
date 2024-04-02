@@ -103,8 +103,7 @@ const Header = () => {
                           <li key={data.name}>
                             <Link
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
-                             
-                              to={"discover"}
+                              to={"/discover"}
                               state={data?.name}
                             >
                               {data.name}
@@ -129,7 +128,7 @@ const Header = () => {
                           <li key={data.name}>
                             <Link
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
-                              to={"academics"}
+                              to={"/academics"}
                               state={data?.name}
                             >
                               {data.name}
@@ -173,7 +172,7 @@ const Header = () => {
                           <li key={data.name}>
                             <Link
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
-                              to={"activities"}
+                              to={"/activities"}
                               state={data?.name}
                             >
                               {data.name}
@@ -194,7 +193,9 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <a href="#footer">Contact</a>
+                  <Link to="/#footer" onClick={() => window.scrollTo(80, 800)}>
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
