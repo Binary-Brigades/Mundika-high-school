@@ -1,5 +1,6 @@
 import React from "react";
 import svg from "../../assets/image.svg";
+import { HashLink } from "react-router-hash-link";
 function Footer() {
   return (
     <section className="text-white  bottom-0 relative" id="footer">
@@ -117,25 +118,27 @@ function Footer() {
           </div>
         </div>
         <a
-          href="#"
+          href=""
           className="absolute w-12 flex items-center justify-center float-right shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 bottom-24 right-2"
           rel="ugc"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-white w-8 h-8"
-          >
-            <path d="m5 12 7-7 7 7"></path>
-            <path d="M12 19V5"></path>
-          </svg>
+          <HashLink smooth to="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-white w-8 h-8"
+            >
+              <path d="m5 12 7-7 7 7"></path>
+              <path d="M12 19V5"></path>
+            </svg>
+          </HashLink>
         </a>
         <p className="text-sm text-center text-gray-500">
           Made with ❤ by @BinaryBrigades

@@ -83,13 +83,9 @@ const Header = ({ setShowSidebar }) => {
             <div className="hidden md:block mt-6 ml-8">
               <ul className="flex items-center gap-6">
                 <li className="py-4">
-                  <NavLink
-                    to="/"
-                    // activeClsName="active"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    Home
-                  </NavLink>
+                  <HashLink smooth to="/">
+                   Home
+                  </HashLink>
                 </li>
                 <li className="relative py-4 group cursor-pointer">
                   <div className="dropdown flex items-center">

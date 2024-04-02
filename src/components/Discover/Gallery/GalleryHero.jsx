@@ -21,7 +21,7 @@ function Hero() {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
   FaCaretDown,
   FaCross,
@@ -172,9 +173,9 @@ function Sidebar({ showSideBar }) {
               </NavLink>
             </li>
             <li className="py-4">
-              <Link to="/#footer" onClick={() => window.scrollTo(80, 800)}>
+              <HashLink smooth to="/#footer">
                 Contact
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>
