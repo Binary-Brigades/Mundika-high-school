@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router";
-import ClubsAndSocieties from "../components/Activities/ClubsAndSocieties";
+import ClubsAndSocieties from "../components/Activities/ClubsAndSocieties/ClubsAndSocieties";
 import GamesAndSports from "../components/Activities/GamesAndSports/GamesAndSports";
 
 function ActivitiesPage() {

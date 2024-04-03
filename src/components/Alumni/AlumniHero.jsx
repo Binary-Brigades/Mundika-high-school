@@ -32,11 +32,11 @@ function AlumniHero() {
             className="w-full z-[-1] h-full absolute top-0 right-0 object-cover self-center"
             alt=""
           />
-          <div className="text-white w-full h-full flex px-32 flex-col items-center bg-[#590000]/60 justify-center ">
-            <h1 className="font-semibold lg:text-5xl md:text-4xl text-2xl">
+          <div className="text-white w-full h-full flex px-4 flex-col items-center bg-[#590000]/60 justify-center ">
+            <h1 className="font-semibold lg:text-5xl pt-12 md:text-4xl text-2xl">
               Alumni
             </h1>
-            <p className="lg:text-2xl text-lg mt-10 px-32  md:text-lg">
+            <p className="lg:text-2xl text-md mt-10  md:text-lg">
             Welcome back to Mundika High School Alumni Page! Whether you graduated last year or decades ago, you're an important part of our school's history and legacy.
             </p>{" "}
           </div>
