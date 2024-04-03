@@ -1,9 +1,12 @@
 import React from "react";
+import AdminAbout from "./AdminAbout";
+import BoardMembers from "./BoardMembers";
+import Stuff from "./Stuff";
 
 function AdminText() {
   return (
     <div className="w-screen px-4 md:px-12 lg:px-20 mt-10">
-      <p>
+      <p className="md:text-lg">
         Welcome to the official website of the Board of Management for Mundika
         High School. As the governing body responsible for overseeing the
         strategic direction and policies of the school, we are committed to
@@ -15,6 +18,9 @@ function AdminText() {
         and values. Meet our members and find out about our roles and
         responsibilities.
       </p>
+      <AdminAbout />
+          <BoardMembers />
+          <Stuff/>
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="w-screen bg-[#b08b8d] px-4 md:px-12 lg:px-20">
-      <p className="text-white md:text-xl text-lg font-semibold py-2">
+    <div className="w-screen bg-[#b08b8d] justify-center items-center px-4 md:px-12 lg:px-20">
+      <p className="text-white md:text-left text-center md:text-xl text-lg font-semibold py-2">
         About Us
       </p>
       <div className="flex md:flex-row flex-col gap-4 md:justify-between md:py-12 py-5">
