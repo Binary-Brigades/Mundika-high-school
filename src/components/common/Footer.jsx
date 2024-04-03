@@ -247,7 +247,7 @@ function Footer() {
                   <p>mmust.ac.ke</p>
                 </a>
                 <a
-                  href="www.konza.com"
+                  href="https://konza.go.ke/"
                   target="_blank"
                   className="h-24 w-40 flex flex-col gap-2 "
                 >
@@ -266,9 +266,9 @@ function Footer() {
             <p>2024 St.Mary's Mundika Boys High School. All rights Reserved</p>
           </div>
         </div>
-        <div className="absolute flex items-center  justify-center float-right flex-col bottom-24 right-2">
+        <div className="absolute flex items-center  justify-center float-right flex-col md:bottom-[100px] bottom-[120px] right-2">
           <div
-            className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 "
+            className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 animate-bounce"
             rel="ugc"
           >
             <HashLink smooth to="#">
