@@ -10,7 +10,7 @@ import { useState } from "react";
 
 function About() {
   const [showSideBar, setShowSidebar] = useState(false);
-  console.log(showSideBar);
+  // console.log(showSideBar);
   return (
     <div>
       <Header setShowSidebar={setShowSidebar} />

@@ -267,8 +267,7 @@ function Footer() {
           </div>
         </div>
         <div className="absolute flex items-center  justify-center float-right flex-col bottom-24 right-2">
-          <a
-            href=""
+          <div
             className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 "
             rel="ugc"
           >
@@ -289,7 +288,7 @@ function Footer() {
                 <path d="M12 19V5"></path>
               </svg>
             </HashLink>
-          </a>
+          </div>
           <p className="font-bold">Back To Top </p>
         </div>
         <p className="text-sm text-center text-gray-500">

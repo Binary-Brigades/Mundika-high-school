@@ -60,7 +60,7 @@ function Sidebar({ showSideBar }) {
       >
         <div className=" flex flex-col mt-6 ml-8 ">
           <ul className="flex flex-col ml-4 gap-2">
-            <li className="py-2">
+            <li className="">
               <NavLink
                 to="/"
                 // activeClsName="active"
@@ -69,7 +69,7 @@ function Sidebar({ showSideBar }) {
                 Home
               </NavLink>
             </li>
-            <li className="relative py-4 group cursor-pointer">
+            <li className="relative py-2 group cursor-pointer">
               <div className="dropdown flex items-center">
                 <span>Discover</span>
                 <span>
@@ -94,7 +94,7 @@ function Sidebar({ showSideBar }) {
                 </ul>
               </div>
             </li>
-            <li className="relative py-4 group cursor-pointer">
+            <li className="relative py-2 group cursor-pointer">
               <div className="dropdown flex items-center">
                 <span>Academics</span>
                 <span>
@@ -119,7 +119,7 @@ function Sidebar({ showSideBar }) {
                 </ul>
               </div>
             </li>
-            <li className="py-4">
+            <li className="py-2">
               <NavLink
                 activeclassname="active"
                 to="/alumni"
@@ -128,7 +128,7 @@ function Sidebar({ showSideBar }) {
                 Alumni
               </NavLink>
             </li>
-            <li className="py-4">
+            <li className="py-2">
               <NavLink
                 activeclassname="active"
                 to="/administration"
