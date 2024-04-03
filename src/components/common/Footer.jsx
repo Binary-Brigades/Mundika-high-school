@@ -85,7 +85,9 @@ function Footer() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  <span>0711201107</span>
+                  <span>
+                    <a href="tel:+254711201107">0711201107</a>
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <svg
@@ -105,7 +107,11 @@ function Footer() {
                     <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0"></path>
                     <line x1="6" x2="7" y1="10" y2="10"></line>
                   </svg>
-                  <span className="truncate">mundikastmarys65@gmail.com</span>
+                  <span className="truncate">
+                    <a href="mailto:mundikastmarys65@gmail.com">
+                      mundikastmarys65@gmail.com
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>
