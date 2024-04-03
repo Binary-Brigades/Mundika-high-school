@@ -8,12 +8,12 @@ function TeacherCard({ name, role, subjects, image }) {
         alt={`${name} image`}
         className="w-full rounded-md md:rounded-xl object-cover object-top h-32 md:h-[300px]"
       />
-      <div className="px-2 mt-2 text-sm md:text-base">
+      <div className="px-2 mt-2 text-sm md:text-base pb-3">
         <h3 className="font-bold capitalize text-[#590000]/80">{role}</h3>
         <p className="font-semibold tracking-wide text-[#ffff]/70 ">{name}</p>
-        <p>
+        <p className="w-full ">
           {subjects.map((subject) => {
-            <span className="text-gray-500">{subject} | </span>;
+            return <span className="text-gray-500">{subject}, </span>;
           })}
         </p>
       </div>
