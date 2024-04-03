@@ -277,7 +277,7 @@ function Footer() {
             className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 animate-bounce"
             rel="ugc"
           >
-            <Link to="#" onClick={() => window.scrollTo(0, 0)}>
+            <HashLink smooth to="/#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -293,7 +293,7 @@ function Footer() {
                 <path d="m5 12 7-7 7 7"></path>
                 <path d="M12 19V5"></path>
               </svg>
-            </Link>
+            </HashLink>
           </div>
           <p className="font-bold">Back To Top </p>
         </div>
