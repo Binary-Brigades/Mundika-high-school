@@ -277,7 +277,7 @@ function Footer() {
             className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 animate-bounce"
             rel="ugc"
           >
-            <HashLink smooth to="/#">
+            <HashLink to="#" smooth>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

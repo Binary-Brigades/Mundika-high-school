@@ -4,7 +4,11 @@ import ClubsAndSocieties from "../components/Activities/ClubsAndSocieties/ClubsA
 import GamesAndSports from "../components/Activities/GamesAndSports/GamesAndSports";
 
 function ActivitiesPage() {
-  const { state } = useLocation();
+  var { state } = useLocation();
+
+  if (state === null) {
+    state = "Games & Sports";
+  }
   return (
     <div>
       {
