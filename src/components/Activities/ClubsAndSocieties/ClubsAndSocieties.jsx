@@ -1,55 +1,53 @@
-import React from "react";
+import Sidebar from "../../common/Sidebar";
+import { useState } from "react";
 import Header from "../../common/Header";
 import Footer from "../../common/Footer";
 
 const clubs = [
   {
     name: "Drama Club",
-    img: "https://placehold.co/400x400",
+    img: "https://3.files.edl.io/60c8/18/10/22/171316-6ff283a1-280f-4d70-b616-ae77c12c4488.jpg",
   },
   {
     name: "Music Club",
-    img: "https://placehold.co/400x400",
+    img: "https://media.istockphoto.com/id/153867731/vector/exhibition-of-a-song.jpg?s=612x612&w=0&k=20&c=Gdp5K96KyECaTERr6M468PZlknVg2a4V_VIM9eKBDNw=",
   },
   {
     name: "Art Club",
-    img: "https://placehold.co/400x400",
+    img: "https://www.stickylife.com/media/catalog/category/Art_Club.png",
   },
   {
     name: "Debate Club",
-    img: "https://placehold.co/400x400",
+    img: "https://www.monticelloacademy.org/application/files/cache/thumbnails/e44796d27b75690e3be2c94b94b4b795.png",
   },
   {
     name: "Science Club",
-    img: "https://placehold.co/400x400",
+    img: "https://clpmag.com/wp-content/uploads/2022/09/clinical-laboratory-technician.jpg",
   },
   {
     name: "Maths Club",
-    img: "https://placehold.co/400x400",
+    img: "https://3.files.edl.io/3721/20/12/21/230753-105f34cf-85fa-4905-b355-51f27a6aad5e.png",
   },
   {
     name: "Literature Club",
-    img: "https://placehold.co/400x400",
+    img: "https://www.kpl.gov/app/uploads/2023/08/CTA-YA-Banned-Book-Club@72x-1536x864.png",
   },
-  {
-    name: "History Club",
-    img: "https://placehold.co/400x400",
-  },
-  {
-    name: "Geography Club",
-    img: "https://placehold.co/400x400",
-  },
-
   {
     name: "Environment Club",
-    img: "https://placehold.co/400x400",
+    img: "https://www.baysidehighschool.org/ourpages/auto/2023/3/3/48488454/recycle.jpg?rnd=1677829228461",
   },
+  {
+    name: "Scouts",
+    img: "https://thumbs.dreamstime.com/z/scouting-isolated-cartoon-vector-illustration-scout-boy-uniform-high-school-activity-american-explorer-student-club-tourist-261545351.jpg?ct=jpeg",
+  }
 ];
 
 function ClubsAndSocieties() {
+  const [showSideBar, setShowSidebar] = useState(false);
   return (
     <div className="w-[100vw]">
-      <Header />
+      <Header setShowSidebar={setShowSidebar} />
+      <Sidebar showSideBar={showSideBar} />
       <div className="pt-24 md:px-24 px-2">
         <h1 className="text-xl text-bold text-center mb-4">
           Clubs And Societies
