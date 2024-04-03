@@ -1,4 +1,5 @@
-import React from "react";
+import Sidebar from "../../common/Sidebar";
+import { useState } from "react";
 import Header from "../../common/Header";
 import Footer from "../../common/Footer";
 
@@ -42,9 +43,11 @@ const clubs = [
 ];
 
 function ClubsAndSocieties() {
+  const [showSideBar, setShowSidebar] = useState(false);
   return (
     <div className="w-[100vw]">
-      <Header />
+      <Header setShowSidebar={setShowSidebar} />
+      <Sidebar showSideBar={showSideBar} />
       <div className="pt-24 md:px-24 px-2">
         <h1 className="text-xl text-bold text-center mb-4">
           Clubs And Societies
