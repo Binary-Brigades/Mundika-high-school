@@ -76,11 +76,11 @@ function ClubsAndSocieties() {
           {clubs.map((club, index) => (
             <div
               key={index}
-              className="flex h-full w-full relative flex-col items-center rounded-md overflow-hidden"
+              className="flex h-full w-full relative cursor-pointer flex-col items-center rounded-md overflow-hidden"
             >
-              <img className="h-full w-full " src={club.img} alt={club.name} />
+              <img className="h-full w-full  " src={club.img} alt={club.name} />
               <div className="bg-[#590000]/40 h-full flex justify-center items-center  absolute top-0  w-full">
-                <p className="text-xl text-center text-bold text-[#fff]">
+                <p className="text-xl text-center hover:scale-110 cursor-pointer text-bold text-[#fff]">
                   {club.name}
                 </p>
               </div>
