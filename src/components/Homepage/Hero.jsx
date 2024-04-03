@@ -50,9 +50,11 @@ function Hero() {
       >
         <div className="bg-[rgba(0,0,0,.5)] flex text-white justify-center flex-col items-center w-full h-full">
           <h1 className="font-semibold lg:text-5xl md:text-3xl text-xl tracking-widest">
-            Maich
+            Empowering Future Leaders
           </h1>
-          <p className="lg:text-2xl mt-10 text-base md:text-lg">Where</p>
+          <p className="lg:text-2xl mt-10 text-base md:text-lg">
+            Join us at Mundika High School
+          </p>
         </div>
       </div>
     </Slider>
