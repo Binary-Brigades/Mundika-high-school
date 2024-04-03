@@ -85,7 +85,9 @@ function Footer() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  <span>0711201107</span>
+                  <span>
+                    <a href="tel:+254711201107">0711201107</a>
+                  </span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <svg
@@ -105,7 +107,11 @@ function Footer() {
                     <path d="M6.5 5C9 5 11 7 11 9.5V17a2 2 0 0 1-2 2v0"></path>
                     <line x1="6" x2="7" y1="10" y2="10"></line>
                   </svg>
-                  <span className="truncate">mundikastmarys65@gmail.com</span>
+                  <span className="truncate">
+                    <a href="mailto:mundikastmarys65@gmail.com">
+                      mundikastmarys65@gmail.com
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -247,7 +253,7 @@ function Footer() {
                   <p>mmust.ac.ke</p>
                 </a>
                 <a
-                  href="www.konza.com"
+                  href="https://konza.go.ke/"
                   target="_blank"
                   className="h-24 w-40 flex flex-col gap-2 "
                 >
@@ -266,9 +272,9 @@ function Footer() {
             <p>2024 St.Mary's Mundika Boys High School. All rights Reserved</p>
           </div>
         </div>
-        <div className="absolute flex items-center  justify-center float-right flex-col bottom-24 right-2">
+        <div className="absolute flex items-center  justify-center float-right flex-col md:bottom-[100px] bottom-[120px] right-2">
           <div
-            className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 "
+            className="w-12 flex items-center justify-center  shadow rounded-full shadow-black px-2 py-2 bg-[#2c3e9e] mx-12 animate-bounce"
             rel="ugc"
           >
             <HashLink smooth to="#">
