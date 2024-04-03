@@ -3,7 +3,11 @@ import Admission from "../components/Academics/Admission";
 import ELibrary from "../components/Academics/ELibrary";
 import Finance from "../components/Academics/Finance";
 function Academics() {
-  const { state } = useLocation();
+  var { state } = useLocation();
+
+  if (state === null) {
+    state = "Admission";
+  }
   return (
     <div>
       {

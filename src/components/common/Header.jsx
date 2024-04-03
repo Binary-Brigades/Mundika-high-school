@@ -61,7 +61,7 @@ const Header = ({ setShowSidebar }) => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px]">
+      <header className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px]">
         <div className="container py-3 sm:py-0 relative">
           <div className="flex justify-between items-center">
             {/* logo */}
@@ -103,6 +103,7 @@ const Header = ({ setShowSidebar }) => {
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
                               to={"/discover"}
                               state={data?.name}
+                              
                             >
                               {data.name}
                             </Link>
@@ -235,7 +236,7 @@ const Header = ({ setShowSidebar }) => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };
