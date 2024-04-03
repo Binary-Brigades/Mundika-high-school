@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../../../assets/undraw_basketball_re_7701 1.svg";
 import img3 from "../../../assets/undraw_graduation_re_gthn (1) 1.svg";
+import img4 from "../../../assets/undraw_grades_re_j7d6 1.png";
 import img2 from "../../../assets/undraw_coffee_break_h3uu 1.png";
 function Achievement() {
   return (
@@ -10,11 +11,11 @@ function Achievement() {
         Our Sacrifice to succeed has beared many fruits which we are proud of
         todate
       </p>
-      <div className="w-screen bg-whit  p-6 grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center md:h-[250px] md:px-12 lg:px-20">
+      <div className="w-screen bg-whit  p-6 grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center md:h-[250px] md:px-12 lg:px-20">
         <div className="bg-white text-center flex-1 md:max-w-[250px] h-[150px] rounded-lg flex justify-center flex-row items-center border-2 border-gray-500 p-2 ">
           <div className="flex flex-col gap-12 mr-4">
             <p className="font-semibold">Co-Curricular</p>
-            <p className="font-semibold mr-4">15</p>
+            <p className="font-semibold mr-4 text-lg font-mono">15</p>
           </div>
           <img src={img1} alt="" />
         </div>
@@ -23,7 +24,7 @@ function Achievement() {
             <p className="font-semibold w-[100px] absolute bottom-12">
               Stem projects
             </p>
-            <p className="absolute left-4 font-semibold">5</p>
+            <p className="absolute left-4 font-semibold font-mono text-lg">5</p>
           </div>
           <img src={img2} alt="" />
         </div>
@@ -32,9 +33,22 @@ function Achievement() {
             <p className="font-semibold absolute bottom-8 w-[150px]">
               Notable Alumni
             </p>
-            <p className="absolute left-4 font-semibold">50</p>
+            <p className="absolute left-4 font-semibold text-lg font-mono">
+              50
+            </p>
           </div>
           <img src={img3} alt="" />
+        </div>
+        <div className="bg-white text-center flex-1 md:max-w-[250px] h-[150px] rounded-lg flex justify-center flex-row items-center border-2 border-gray-500 p-2 ">
+          <div className="flex flex-col gap-12 mr-4 relative">
+            <p className="font-semibold absolute bottom-8 w-[150px]">
+              Students
+            </p>
+            <p className="absolute left-4 font-semibold text-lg font-mono">
+              700
+            </p>
+          </div>
+          <img src={img4} alt="" />
         </div>
       </div>
     </div>

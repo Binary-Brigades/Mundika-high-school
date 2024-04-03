@@ -11,11 +11,14 @@ body {
   background-position: top;
   background-size: cover;
 }
-.aboutbg{
- background-image: url("./assets/Rectangle 30.png"); 
+.aboutbg {
+  background-image: url("./assets/Rectangle 30.png");
 }
-.gallerybg{
-   background-image: url("./assets/Rectangle 31.png"); 
+.gallerybg {
+  background-image: url("./assets/Rectangle 31.png");
+}
+.gamesbg {
+  background-image: url("./assets/Games and sports 2.png");
 }
 ::-webkit-scrollbar {
   width: 5px;

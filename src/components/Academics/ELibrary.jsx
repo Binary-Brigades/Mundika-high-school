@@ -60,8 +60,8 @@ function Elibrary() {
               className="w-full z-[-1] h-full absolute top-0 right-0 object-cover self-center"
               alt=""
             />
-            <div className="text-white h-full flex flex-col items-center bg-[#000068]/20 justify-center ">
-              <p className="lg:text-2xl mt-10 text-base md:text-xl">
+            <div className="text-white h-full flex flex-col items-center bg-[#000068]/50 justify-center ">
+              <p className="text-3xl mt-10 font-bold">
                 The School Library
               </p>
             </div>

@@ -44,7 +44,7 @@ function Testimonials() {
     ],
   };
   return (
-    <div className="w-screen px-4 py-6 md:px-12 lg:px-20 bg-[#b08b8d]">
+    <div className="w-screen px-4 py-6 md:px-12 lg:px-20 bg-[#b08b8d] md:mb-8">
       <h2 className="text-white font-semibold text-xl tracking-wider">
         Testimonials
       </h2>
