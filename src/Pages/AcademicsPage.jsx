@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import Admission from "../components/Academics/Admission";
 import ELibrary from "../components/Academics/ELibrary";
 import Finance from "../components/Academics/Finance";
+import Performance from "../components/Academics/Performance/Performance";
 function Academics() {
   const { state } = useLocation();
   return (
