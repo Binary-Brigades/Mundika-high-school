@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 
 function FInanceDetails() {
+  const PrintRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => PrintRef.current,
+  });
+
   return (
-    <div className="w-screen md:text-sm  justify-start pt-[8%] px-4 md:px-12 lg:px-10 flex flex-col">
+    <div
+      ref={PrintRef}
+      className="w-screen md:text-sm  justify-start pt-[8%] px-4 md:px-12 lg:px-10 flex flex-col"
+    >
       <p className="text-sm md:text-md py-1 pt-12 md:pt-2 md:text-center mb-4 text-left">
         {" "}
         At Mundika High School, we aim to provide quality education and a
@@ -163,6 +172,12 @@ function FInanceDetails() {
           <p>mundika@gmail.com</p>
         </div>
       </div>
+      <button
+        className="bg-[#590000] text-white font-semibold max-w-[200px] py-2 px-4 rounded-md mt-4 md:mt-8 mx-auto"
+        onClick={handlePrint}
+      >
+        Print this out!
+      </button>
     </div>
   );
 }
