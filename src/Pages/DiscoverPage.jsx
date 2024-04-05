@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "../components/Discover/About/About";
 import Gallery from "../components/Discover/Gallery/Gallery";
 import { useLocation } from "react-router";
 function Discover() {
-  const { state } = useLocation();
-  console.log(state);
+  var { state } = useLocation();
+
+  if (state === null) {
+    state = "About";
+  }
+
   return (
     <div>
       {

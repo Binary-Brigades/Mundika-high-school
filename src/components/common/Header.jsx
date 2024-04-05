@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import {
   FaCaretDown,
   FaCross,
@@ -60,7 +61,7 @@ const Header = ({ setShowSidebar }) => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px]">
+      <header className="fixed top-0 right-0 bg-[#2c3e9e] w-screen text-white shadow-xl z-[9999] justify-between items-center px-6 flex h-[80px]">
         <div className="container py-3 sm:py-0 relative">
           <div className="flex justify-between items-center">
             {/* logo */}
@@ -82,13 +83,9 @@ const Header = ({ setShowSidebar }) => {
             <div className="hidden md:block mt-6 ml-8">
               <ul className="flex items-center gap-6">
                 <li className="py-4">
-                  <NavLink
-                    to="/"
-                    // activeClsName="active"
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
+                  <HashLink smooth to="/">
                     Home
-                  </NavLink>
+                  </HashLink>
                 </li>
                 <li className="relative py-4 group cursor-pointer">
                   <div className="dropdown flex items-center">
@@ -106,6 +103,7 @@ const Header = ({ setShowSidebar }) => {
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
                               to={"/discover"}
                               state={data?.name}
+                              
                             >
                               {data.name}
                             </Link>
@@ -194,9 +192,9 @@ const Header = ({ setShowSidebar }) => {
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <a href="#" onClick={() => window.scrollTo(-1, 0)}>
+                  <HashLink smooth to="/#footer">
                     Contact
-                  </a>
+                  </HashLink>
                 </li>
               </ul>
             </div>
@@ -224,21 +222,21 @@ const Header = ({ setShowSidebar }) => {
               <div className="flex justify-end py-[2px] gap-8">
                 <div className="flex items-center justify-center gap-3 ">
                   <FaPhoneAlt color="#590000" />
-                  <a href="tel:+254740920640">
-                    <p>+254740920640</p>
+                  <a href="tel:+254113198044">
+                    <p>+254113198044</p>
                   </a>
                 </div>
                 <div className="flex items-center justify-center gap-3 ">
                   <HiMail color="#590000" />
-                  <a href="mailto:email@example.com">
-                    <p>email@example.com</p>
+                  <a href="mailto:mundika@gmail.com">
+                    <p>mundika@gmail.com</p>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };
