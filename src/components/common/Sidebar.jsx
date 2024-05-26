@@ -39,6 +39,10 @@ function Sidebar({ showSideBar }) {
       name: "Games & Sports",
       link: "#",
     },
+    {
+      name: "Environment and Social Activities",
+      link: "#",
+    },
   ];
   const dropdownDiscover = [
     {
