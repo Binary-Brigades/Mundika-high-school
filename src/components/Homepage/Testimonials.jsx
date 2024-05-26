@@ -122,8 +122,8 @@ function Testimonials() {
       </h2>
 
       <Slider {...settings}>
-        {testimonials.map((testimonial) => (
-          <div className=" shadow-3xl shadow-black justify-center items-center flex flex-col text-[#fff]/70 p-1">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className=" shadow-3xl shadow-black justify-center items-center flex flex-col text-[#fff]/70 p-1">
             <p>
               <RiDoubleQuotesL className="text-4xl" />
               {testimonial.testimonial}
