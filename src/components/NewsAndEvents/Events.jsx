@@ -1,18 +1,18 @@
 import Card from './Card'
 const SchoolEvents = [{
-        title: 'WE welcome you to our Anual General Meeting ( AGM )',
+        title: 'We welcome you to our Anual General Meeting ( AGM )',
         date: '25th September 2024',
     image: '/games.png',
     content: 'hello world'
 },
     {
-        title: 'WE welcome you to our Anual General Meeting ( AGM )',
+        title: 'We welcome you to our Anual General Meeting ( AGM )',
         date: '25th September 2024',
     image: '/games.png',
     content: 'Welcome to our AGM'
     },
     {
-        title: 'WE welcome you to our Anual General Meeting ( AGM )',
+        title: 'We welcome you to our Anual General Meeting ( AGM )',
         date: '25th September 2024',
     image: '/games.png',
     content: 'hello world. Welcome to our Annual General Meeting'
