@@ -2,9 +2,9 @@ import React from "react";
 
 function PerfomanceDetails() {
   return (
-    <div className="w-screen md:text-sm  justify-start px-[8%] md:px-14 lg:px-20 flex flex-col">
+    <div className="w-screen md:text-sm  justify-start px-[8%] md:px-14 lg:px-20 flex flex-col overflow-x-auto">
       <p>School Perfomance</p>
-      <table className="table p-4 bg-[#b08b8d]rounded-lg shadow">
+      <table className="table p-4 bg-[#b08b8d]rounded-lg shadow overflow-x-auto">
         <thead>
           <tr>
             <th className=" text-left border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-bold text-gray-900">

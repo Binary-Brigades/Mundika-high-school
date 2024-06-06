@@ -19,12 +19,12 @@ function FInanceDetails() {
         <br />
         Below is the fee structure for the Academic year 2024 to 2025.
       </p>
-      <div className="bg-[#b08b8d] py-4 flex flex-col">
+      <div className="bg-[#b08b8d] py-4 flex flex-col overflow-x-auto">
         <h1 className=" justify text-center font-semibold tracking-wider underline text-xl ">
           2024 Fees Structure
         </h1>
 
-        <table className="table p-4 bg-[#b08b8d]rounded-lg shadow">
+        <table className="table p-4 bg-[#b08b8d]rounded-lg shadow overflow-x-auto">
           <thead>
             <tr>
               <th className=" text-left border-b-2 p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900">
