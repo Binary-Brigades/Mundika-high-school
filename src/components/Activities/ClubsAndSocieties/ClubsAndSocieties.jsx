@@ -67,7 +67,7 @@ function ClubsAndSocieties() {
           </p>
           <img
             className="h-72 w-full md:w-1/2 object-cover rounded-md"
-            src="https://scontent.fmba5-1.fna.fbcdn.net/v/t1.6435-9/36837424_2130462343633653_5751953638847152128_n.jpg?stp=dst-jpg_p180x540&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=irwWU3_qhpMAX857LNY&_nc_pt=1&_nc_ht=scontent.fmba5-1.fna&cb_e2o_trans=q&oh=00_AfB6Jj8biDoFKpg1rFVbpEMoUlg4K0lNz_KuFpoFYb4o4A&oe=66348C3F"
+            src="https://thumbs.dreamstime.com/z/scouting-isolated-cartoon-vector-illustration-scout-boy-uniform-high-school-activity-american-explorer-student-club-tourist-261545351.jpg?ct=jpeg_"
             alt=""
           />
         </div>
