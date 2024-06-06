@@ -46,7 +46,7 @@ function Elibrary() {
 
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header setShowSidebar={setShowSidebar} />
       <Sidebar showSideBar={showSideBar} />
       <Slider {...settings}>
