@@ -21,7 +21,7 @@ const SchoolEvents = [{
 
 export default function Activities() {
     return (
-         <div className="px-16">
+         <div className="px-4 lg:px-16">
             <h3 className="text-xl font-semibold mt-3">Our Activities</h3>
             {SchoolEvents.map((Event, index) => (
                 <Card key={index} title={Event.title} date={Event.date} image={Event.image} content={Event.content} />
