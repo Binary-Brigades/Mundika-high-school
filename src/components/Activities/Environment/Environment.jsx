@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "../../common/Header";
 import Footer from "../../common/Footer";
 import EnvironmentHero from "./EnvironmentHero"
+import EnvironmentActivities from "./Environment Activities"
 
 function Environment() {
     const [showSideBar, setShowSidebar] = useState(false);
@@ -11,11 +12,7 @@ function Environment() {
             <Header setShowSidebar={setShowSidebar} />
             <Sidebar showSideBar={showSideBar} />
             <EnvironmentHero />
-            <div className="pt-24 md:px-24 px-2">
-                <h1 className="text-xl text-bold text-center mb-4">
-                    Environment and Social Activities
-                </h1>
-            </div>
+            <EnvironmentActivities/>           
             <Footer/>
         </div>    
     )
