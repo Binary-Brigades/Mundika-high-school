@@ -95,10 +95,10 @@ const Header = ({ setShowSidebar }) => {
                   <div className="dropdown flex items-center">
                     <span>Discover</span>
                     <span>
-                      <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                      <FaCaretDown className="transition-all  duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
-                  <div className="absolute -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
+                  <div className="absolute rounded-md -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[150px] bg-white p-2">
                     <ul>
                       {dropdownDiscover.map((data) => {
                         return (
@@ -107,7 +107,6 @@ const Header = ({ setShowSidebar }) => {
                               className="inline-block w-full rounded-md p-2 hover:bg-[#2c3e9e]/20"
                               to={"/discover"}
                               state={data?.name}
-                              
                             >
                               {data.name}
                             </Link>
@@ -124,7 +123,7 @@ const Header = ({ setShowSidebar }) => {
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
-                  <div className="absolute -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[180px] bg-white p-2">
+                  <div className="absolute rounded-md -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[180px] bg-white p-2">
                     <ul>
                       {dropdownAcademics.map((data) => {
                         return (
@@ -168,7 +167,7 @@ const Header = ({ setShowSidebar }) => {
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                     </span>
                   </div>
-                  <div className="absolute -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[180px] bg-white p-2">
+                  <div className="absolute rounded-md -left-9 z-[999] hidden group-hover:block shadow-md text-black w-[180px] bg-white p-2">
                     <ul>
                       {dropdownActivities.map((data) => {
                         return (
