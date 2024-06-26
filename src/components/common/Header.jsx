@@ -199,6 +199,11 @@ const Header = ({ setShowSidebar }) => {
                     Contact
                   </HashLink>
                 </li>
+                <img
+                  src="/kenyan-flag.jpeg"
+                  alt="kenyan flag"
+                  className="w-[2em] h-[2em] rounded-[50%]"
+                />
               </ul>
             </div>
 
