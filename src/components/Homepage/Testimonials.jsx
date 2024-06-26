@@ -1,5 +1,9 @@
 import React from "react";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
+
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
 import Slider from "react-slick";
 const testimonials = [
   {
@@ -115,6 +119,14 @@ function Testimonials() {
       },
     ],
   };
+    const defaultProps = {
+      center: {
+        lat: 10.99835602,
+        lng: 77.01502627,
+      },
+      zoom: 11,
+    };
+
   return (
     <div className="w-screen px-4 py-6 md:px-12 lg:px-20 bg-[#b08b8d] md:mb-8">
       <h2 className="text-white font-semibold text-xl tracking-wider">
@@ -123,7 +135,10 @@ function Testimonials() {
 
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className=" shadow-3xl shadow-black justify-center items-center flex flex-col text-[#fff]/70 p-1">
+          <div
+            key={index}
+            className=" shadow-3xl shadow-black justify-center items-center flex flex-col text-[#fff]/70 p-1"
+          >
             <p>
               <RiDoubleQuotesL className="text-4xl" />
               {testimonial.testimonial}
@@ -138,6 +153,12 @@ function Testimonials() {
           </div>
         ))}
       </Slider>
+      <div className="w-full justify-center items-center flex flex-col bg-white rounded-lg p-3">
+        <h2 className="text-xl tracking-wider mt-5 font-semibold">
+          Our Location
+        </h2>
+        <p>werytvbnm</p>
+      </div>
     </div>
   );
 }
