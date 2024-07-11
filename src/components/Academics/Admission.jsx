@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 import Sidebar from "../common/Sidebar";
 
+
 function Admission() {
   const [showSideBar, setShowSidebar] = useState(false);
   return (
@@ -71,6 +72,7 @@ function Admission() {
             </li>
           </ol>
         </div>
+
         <div className="lr">
           <div className="text-1xl font-bold mb-1">
             <p>Important Dates</p>

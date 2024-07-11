@@ -4,6 +4,21 @@ import { HashLink } from "react-router-hash-link";
 import { Link, NavLink } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { Component, useState } from "react";
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+
+
+const containerStyle = {
+  width: '300px',
+  height: '300px'
+};
+
+const center = {
+  lat: 0.423850, 
+  lng: 34.146940
+};
+
+
 function Footer() {
   const dropdownAcademics = [
     {
@@ -34,6 +49,7 @@ function Footer() {
       link: "#",
     },
   ];
+
   const dropdownDiscover = [
     {
       name: "About",
@@ -44,7 +60,30 @@ function Footer() {
       link: "#",
     },
   ];
+
+  
+
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyDjh3zkREhLoCJkLSEN4yA9OiLCe36jGIE"
+  })
+
+  const [map, setMap] = useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    
+    const bounds = new window(center);
+    map.fitBounds(bounds);
+
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
   return (
+
     <section className="text-white  bottom-0 relative" id="footer">
       <footer className="bg text-white py-8 relative pt-[160px] md:pt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -268,6 +307,43 @@ function Footer() {
             </div>
           </div>
 
+
+          
+          {/* <div>
+
+
+          <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+        
+      >
+        <GoogleMap
+  onLoad={map => {
+    const bounds = new window();
+    map.fitBounds(bounds);
+  }}
+  onUnmount={map => {
+    
+  }}
+/>
+      
+        
+      </GoogleMap>
+  
+      
+    </div> */}
+
+
+
+
+
+ 
+
+
+
           <div className="text-center mt-8">
             <p>2024 St.Mary's Mundika Boys High School. All rights Reserved</p>
           </div>
@@ -305,5 +381,6 @@ function Footer() {
     </section>
   );
 }
+
 
 export default Footer;
