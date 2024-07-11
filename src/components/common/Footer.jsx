@@ -309,7 +309,7 @@ function Footer() {
 
 
           
-          <div>
+          {/* <div>
 
 
           <GoogleMap
@@ -330,11 +330,11 @@ function Footer() {
   }}
 />
       
-        <></>
+        
       </GoogleMap>
   
       
-    </div>
+    </div> */}
 
 
 
