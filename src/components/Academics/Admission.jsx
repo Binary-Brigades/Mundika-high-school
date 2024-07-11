@@ -2,9 +2,24 @@ import React, { useState } from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import Sidebar from "../common/Sidebar";
+import { LoadScript, GoogleMap, InfoWindow,  Marker } from '@react-google-maps/api';
+
+
+const mapContainerStyle = {
+  height: "200px",
+  width: "30%"
+};
+
+const position = {
+  lat: -3.745,
+  lng: -38.523
+};
+// const position = { lat: -1.292066, lng: 36.821945 }
+
 
 function Admission() {
   const [showSideBar, setShowSidebar] = useState(false);
+  const [open, setOpen] = useState(false)
   return (
     <div>
       <Header setShowSidebar={setShowSidebar} />
@@ -71,6 +86,37 @@ function Admission() {
             </li>
           </ol>
         </div>
+
+
+        <div>
+  
+  <LoadScript googleMapsApiKey="AIzaSyDjh3zkREhLoCJkLSEN4yA9OiLCe36jGIE">
+    <GoogleMap
+      mapContainerStyle={mapContainerStyle}
+      position={position}
+      zoom={10}
+    >
+
+  <Marker
+  position = {position} onClick = {() => setOpen(true)}>
+  background = {"grey"}
+  borderColor={"green"}
+  glyphColor = {"purple"}
+  
+  </Marker>
+  
+
+  {open && (
+          <InfoWindow position = {position} onCloseClick = {() => setOpen(false)}>
+              <p>I am in Nairobi</p>
+          </InfoWindow>
+      )}
+
+      </GoogleMap>
+  </LoadScript>
+</div>
+
+
         <div className="lr">
           <div className="text-1xl font-bold mb-1">
             <p>Important Dates</p>
