@@ -14,8 +14,8 @@ const containerStyle = {
 };
 
 const center = {
-    lat: -1.292066, 
-    lng: 36.821945
+  lat: 0.423850, 
+  lng: 34.146940
 };
 
 
@@ -68,11 +68,11 @@ function Footer() {
     googleMapsApiKey: "AIzaSyDjh3zkREhLoCJkLSEN4yA9OiLCe36jGIE"
   })
 
-  const [map, setMap] = React.useState(null)
+  const [map, setMap] = useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     
-    const bounds = new window.google.maps.LatLngBounds(center);
+    const bounds = new window(center);
     map.fitBounds(bounds);
 
     setMap(map)
@@ -322,7 +322,7 @@ function Footer() {
       >
         <GoogleMap
   onLoad={map => {
-    const bounds = new window.google.maps.LatLngBounds();
+    const bounds = new window();
     map.fitBounds(bounds);
   }}
   onUnmount={map => {
